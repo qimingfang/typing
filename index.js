@@ -14,4 +14,5 @@ app.get('/', function (req, res) {
   res.render('index', { name: 'John' })
 })
 
-server.listen(3000)
+var port = process.env.PORT || 3000
+server.listen(port)
